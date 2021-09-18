@@ -8,12 +8,19 @@ using TodayExchangeRate.Models;
 
 namespace TodayExchangeRate.Business
 {
+    /// <summary>
+    /// ExchangeRates business
+    /// </summary>
     public class ExchangeRates
     {
         private HttpClient httpClient = new HttpClient();
         private ApiLayerModel apiLayerModel = new ApiLayerModel();
         private OpenMarketModel openMarketModel = new OpenMarketModel();
 
+        /// <summary>
+        /// Gets the API layer rates asynchronous.
+        /// </summary>
+        /// <returns>ApiLayerModel</returns>
         public async Task<ApiLayerModel> GetApiLayerRatesAsync()
         {
             var builder = new ConfigurationBuilder()
@@ -38,6 +45,10 @@ namespace TodayExchangeRate.Business
             return apiLayerModel;
         }
 
+        /// <summary>
+        /// Gets the open market rates asynchronous.
+        /// </summary>
+        /// <returns>OpenMarketModel</returns>
         public async Task<OpenMarketModel> GetOpenMarketRatesAsync()
         {
             var builder = new ConfigurationBuilder()

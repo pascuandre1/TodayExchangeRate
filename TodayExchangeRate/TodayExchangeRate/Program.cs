@@ -7,7 +7,7 @@ namespace TodayExchangeRate
 {
     class Program
     {
-        private static string PrintMode = ConfigurationManager.AppSettings["PrintMode"];
+        private static string printMode = ConfigurationManager.AppSettings["PrintMode"];
         private static ExchangeRates exchangeRates = new ExchangeRates();
         private static MessageBuilder messageBuilder = new MessageBuilder();
 
@@ -17,7 +17,7 @@ namespace TodayExchangeRate
             var openMarketRate = GetOpenMarketExchangeRate();
             var message = messageBuilder.BuildExchangeMessage(apiRate, openMarketRate);
 
-            switch (PrintMode)
+            switch (printMode)
             {
                 case "Console":
                     Console.WriteLine(message);
