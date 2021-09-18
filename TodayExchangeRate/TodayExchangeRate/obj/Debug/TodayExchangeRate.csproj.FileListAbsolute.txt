@@ -1,0 +1,7 @@
+D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.exe.config
+D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.exe
+D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.pdb
+D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.AssemblyReference.cache
+D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.CoreCompileInputs.cache
+D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.exe
+D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.pdb
