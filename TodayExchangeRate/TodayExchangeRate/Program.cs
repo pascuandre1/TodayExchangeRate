@@ -24,7 +24,6 @@ namespace TodayExchangeRate
                     Console.ReadLine();
                     break;
             }
-
         }
     }
 }
