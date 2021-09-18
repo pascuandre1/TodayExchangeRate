@@ -17,6 +17,11 @@ namespace TodayExchangeRate.Business
         private ApiLayerModel apiLayerModel = new ApiLayerModel();
         private OpenMarketModel openMarketModel = new OpenMarketModel();
 
+        public ExchangeRates(HttpClient httpClient)
+        {
+            this.httpClient = httpClient;
+        }
+
         /// <summary>
         /// Gets the API layer rates asynchronous.
         /// </summary>

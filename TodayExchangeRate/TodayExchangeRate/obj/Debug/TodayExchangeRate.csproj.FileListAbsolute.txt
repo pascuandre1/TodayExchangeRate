@@ -42,4 +42,3 @@ D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\System.Threading.Tasks.Ext
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\System.ValueTuple.xml
 D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.CopyComplete
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\Sources.json
-D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.AssemblyReference.cache
