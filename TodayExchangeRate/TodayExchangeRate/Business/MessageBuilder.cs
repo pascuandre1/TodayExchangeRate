@@ -4,12 +4,13 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TodayExchangeRate.Interface;
 
 namespace TodayExchangeRate.Business
 {
-    public class MessageBuilder
+    public class MessageBuilder : IMessageBuilder
     {
-        public string BuildExhangeMessage(decimal apiRate, decimal marketRate)
+        public string BuildExchangeMessage(decimal apiRate, decimal marketRate)
         {
             string additionalMessage = "";
             string exchangeMessageBase =

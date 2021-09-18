@@ -15,7 +15,7 @@ namespace TodayExchangeRate
         {
             var apiRate = GetApiLayerExchangeRate();
             var openMarketRate = GetOpenMarketExchangeRate();
-            var message = messageBuilder.BuildExhangeMessage(apiRate, openMarketRate);
+            var message = messageBuilder.BuildExchangeMessage(apiRate, openMarketRate);
 
             switch (PrintMode)
             {

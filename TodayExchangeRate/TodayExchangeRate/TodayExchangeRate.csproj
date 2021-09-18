@@ -129,6 +129,7 @@
     <Compile Include="Business\ExchangeRates.cs" />
     <Compile Include="Business\MessageBuilder.cs" />
     <Compile Include="Interface\IExchangeRates.cs" />
+    <Compile Include="Interface\IMessageBuilder.cs" />
     <Compile Include="Models\ApiLayerModel.cs" />
     <Compile Include="Models\OpenMarketModel.cs" />
     <Compile Include="Program.cs" />
