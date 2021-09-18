@@ -8,6 +8,7 @@ In the App.config file, we have a key in the app settings section named PrintMod
 The urls for the exchange rate are also configurable in Sources.json.
 Just replace the url values and save.
 
+
 #Build and run on development masine 
 Project requerments : 
 Visual Studio 2019
