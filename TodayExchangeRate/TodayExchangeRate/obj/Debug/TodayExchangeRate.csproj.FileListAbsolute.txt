@@ -1,7 +1,6 @@
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.exe.config
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.exe
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\TodayExchangeRate.pdb
-D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.AssemblyReference.cache
 D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.CoreCompileInputs.cache
 D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.exe
 D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.pdb
@@ -42,3 +41,4 @@ D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\System.Text.Json.xml
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\System.ValueTuple.xml
 D:\TEST\TodayExchangeRate\TodayExchangeRate\obj\Debug\TodayExchangeRate.csproj.CopyComplete
+D:\TEST\TodayExchangeRate\TodayExchangeRate\bin\Debug\Sources.json

@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\ExchangeRates.cs" />
+    <Compile Include="Business\MessageBuilder.cs" />
     <Compile Include="Interface\IExchangeRates.cs" />
     <Compile Include="Models\ApiLayerModel.cs" />
     <Compile Include="Models\OpenMarketModel.cs" />
@@ -136,7 +137,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Sources.json" />
+    <None Include="Sources.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
