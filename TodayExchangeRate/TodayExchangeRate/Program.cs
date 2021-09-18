@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TodayExchangeRate
@@ -11,6 +7,7 @@ namespace TodayExchangeRate
     class Program
     {
         private static string PrintMode = ConfigurationManager.AppSettings["PrintMode"];
+
         static void Main(string[] args)
         {
             switch (PrintMode)
