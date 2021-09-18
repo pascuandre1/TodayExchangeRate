@@ -23,12 +23,7 @@ namespace TodayExchangeRate.Business
         /// <returns>ApiLayerModel</returns>
         public async Task<ApiLayerModel> GetApiLayerRatesAsync()
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("Sources.json");
-
-            var configuration = builder.Build();
-            var apiLayerUrl = configuration["ApiLayerUrl"];
+            var apiLayerUrl = GetUrlFromSources("ApiLayerUrl");
             
             try
             {
@@ -38,7 +33,7 @@ namespace TodayExchangeRate.Business
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
                 throw;
             }
 
@@ -51,11 +46,7 @@ namespace TodayExchangeRate.Business
         /// <returns>OpenMarketModel</returns>
         public async Task<OpenMarketModel> GetOpenMarketRatesAsync()
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("Sources.json");
-            var configuration = builder.Build();
-            var openMarketUrl = configuration["OpenMarketUrl"];
+            var openMarketUrl = GetUrlFromSources("OpenMarketUrl");
 
             try
             {
@@ -65,11 +56,21 @@ namespace TodayExchangeRate.Business
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
                 throw;
             }
 
             return openMarketModel;
+        }
+
+        private string GetUrlFromSources(string key)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("Sources.json");
+
+            var configuration = builder.Build();
+            return configuration[key];
         }
 
     }
