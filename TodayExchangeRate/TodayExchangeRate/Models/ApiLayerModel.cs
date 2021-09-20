@@ -2,6 +2,9 @@
 
 namespace TodayExchangeRate.Models
 {
+    /// <summary>
+    /// Api Layer Model
+    /// </summary>
     public class ApiLayerModel
     {
         /// <summary>

@@ -2,6 +2,9 @@
 
 namespace TodayExchangeRate.Models
 {
+    /// <summary>
+    /// Open Market Model
+    /// </summary>
     public class OpenMarketModel
     {
         /// <summary>

@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using TodayExchangeRate.Interface;
 using TodayExchangeRate.Models;
 
 namespace TodayExchangeRate.Business
@@ -11,7 +12,7 @@ namespace TodayExchangeRate.Business
     /// <summary>
     /// ExchangeRates business
     /// </summary>
-    public class ExchangeRates
+    public class ExchangeRates : IExchangeRates
     {
         private HttpClient httpClient = new HttpClient();
         private ApiLayerModel apiLayerModel = new ApiLayerModel();

@@ -9,14 +9,13 @@ namespace TodayExchangeRate
     class Program
     {
         private static string printMode = ConfigurationManager.AppSettings["PrintMode"];
-        private static HttpClient httpClient = new HttpClient();
-        private static ExchangeRates exchangeRates = new ExchangeRates(httpClient);
+        private static GetRates getRates = new GetRates();
         private static MessageBuilder messageBuilder = new MessageBuilder();
 
         static void Main(string[] args)
         {
-            var apiRate = GetApiLayerExchangeRate();
-            var openMarketRate = GetOpenMarketExchangeRate();
+            var apiRate = getRates.GetApiLayerExchangeRate();
+            var openMarketRate = getRates.GetOpenMarketExchangeRate();
             var message = messageBuilder.BuildExchangeMessage(apiRate, openMarketRate);
 
             switch (printMode)
@@ -34,23 +33,5 @@ namespace TodayExchangeRate
                     break;
             }
         }
-
-        #region private methods
-
-        private static decimal GetApiLayerExchangeRate()
-        {
-            var apiExchangeResult = exchangeRates.GetApiLayerRatesAsync().Result;
-            var usdEurRate = apiExchangeResult.Quotes["USDEUR"];
-            return usdEurRate;
-        }
-
-        private static decimal GetOpenMarketExchangeRate()
-        {
-            var openMarketResult = exchangeRates.GetOpenMarketRatesAsync().Result;
-            var euroRate = openMarketResult.Rates["EUR"];
-            return euroRate;
-        }
-
-        #endregion private methods
     }
 }
