@@ -9,7 +9,9 @@ namespace TodayExchangeRate
     class Program
     {
         private static string printMode = ConfigurationManager.AppSettings["PrintMode"];
-        private static GetRates getRates = new GetRates();
+        private static HttpClient httpClient = new HttpClient();
+        private static ExchangeRates exchangeRates = new ExchangeRates(httpClient);
+        private static GetRates getRates = new GetRates(httpClient,exchangeRates);
         private static MessageBuilder messageBuilder = new MessageBuilder();
 
         static void Main(string[] args)

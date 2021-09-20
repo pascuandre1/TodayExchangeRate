@@ -14,7 +14,7 @@ namespace TodayExchangeRate.Business
     /// </summary>
     public class ExchangeRates : IExchangeRates
     {
-        private HttpClient httpClient = new HttpClient();
+        private readonly HttpClient httpClient = new HttpClient();
         private ApiLayerModel apiLayerModel = new ApiLayerModel();
         private OpenMarketModel openMarketModel = new OpenMarketModel();
 

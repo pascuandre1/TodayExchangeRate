@@ -14,8 +14,14 @@ namespace TodayExchangeRate.Business
     /// <seealso cref="TodayExchangeRate.Interface.IGetRates" />
     public class GetRates : IGetRates
     {
-        private static readonly HttpClient httpClient = new HttpClient();
-        private readonly ExchangeRates exchangeRates = new ExchangeRates(httpClient);
+        private readonly HttpClient httpClient;
+        private readonly ExchangeRates exchangeRates;
+
+        public GetRates(HttpClient httpClient, ExchangeRates exchangeRates)
+        {
+            this.httpClient = httpClient;
+            this.exchangeRates = exchangeRates;
+        }
 
         /// <summary>
         /// Gets the API layer exchange rate.
